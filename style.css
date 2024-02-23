@@ -1,0 +1,47 @@
+* {
+    font-size: 11px;
+    font-family: 'Courier';
+    font-weight: 600;
+}
+
+.tr {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+td.description,
+th.description {
+    width: 120px;
+    word-break: keep-all;
+}
+
+td.price,
+th.price {
+    width: 70px;
+    word-break: break-all;
+
+    text-align: right;
+}
+
+.centered {
+    text-align: center;
+    align-content: center;
+}
+
+.ticket {
+    width: 170px;
+    max-width: 170px;
+}
+
+img {
+    max-width: inherit;
+    width: inherit;
+}
+
+@media print {
+    .hidden-print,
+    .hidden-print * {
+        display: none !important;
+    }
+}
